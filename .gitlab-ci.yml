@@ -7,6 +7,6 @@ build:Thesis:
   script:
     - cd Thesis
     - pdflatex $LATEX_PARAMS main
-    - bibtex Thesis/main
+    - bibtex main
     - pdflatex $LATEX_PARAMS main
     - pdflatex $LATEX_PARAMS main
