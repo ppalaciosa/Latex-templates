@@ -3,10 +3,9 @@ image: listx/texlive:2016
 build:Thesis:
   variables:
     LATEX_PARAMS: |
-        -file-line-error  --synctex=1 -interaction=nonstopmode "\input"
+        -file-line-error -interaction=nonstopmode
   script:
     - cd Thesis
-    - pdflatex $LATEX_PARAMS main
-    - bibtex main
-    - pdflatex $LATEX_PARAMS main
-    - pdflatex $LATEX_PARAMS main
+    - latexmk -pdf -pdflatex="pdflatex $LATEX_PARAMS" main
+  artifacts:
+    - Thesis/main.pdf
