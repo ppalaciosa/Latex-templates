@@ -5,7 +5,8 @@ build:Thesis:
     LATEX_PARAMS: |
         -file-line-error  --synctex=1 -interaction=nonstopmode "\input"
   script:
-    - pdflatex $LATEX_PARAMS Thesis/main
+    - cd Thesis
+    - pdflatex $LATEX_PARAMS main
     - bibtex Thesis/main
-    - pdflatex $LATEX_PARAMS Thesis/main
-    - pdflatex $LATEX_PARAMS Thesis/main
+    - pdflatex $LATEX_PARAMS main
+    - pdflatex $LATEX_PARAMS main
