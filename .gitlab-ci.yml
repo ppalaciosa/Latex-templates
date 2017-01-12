@@ -8,4 +8,5 @@ build:Thesis:
     - cd Thesis
     - latexmk -pdf -pdflatex="pdflatex $LATEX_PARAMS" main
   artifacts:
-    - Thesis/main.pdf
+    paths:
+      - Thesis/main.pdf
