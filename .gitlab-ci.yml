@@ -1,0 +1,11 @@
+image: listx/texlive:2016
+
+build-examples:
+  variables:
+    - LATEX_PARAMS: |
+        -file-line-error  --synctex=1 -interaction=nonstopmode "\input"
+  script:
+    - pdflatex $LATEX_PARAMS Thesis/main
+    - bibtex Thesis/main
+    - pdflatex $LATEX_PARAMS Thesis/main
+    - pdflatex $LATEX_PARAMS Thesis/main
