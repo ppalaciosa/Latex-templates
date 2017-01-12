@@ -1,0 +1,21 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{DiracNotation}
+  [2011/01/11 v0.01 LaTeX package for my own purpose]
+
+\RequirePackage{amsmath, amsfonts, amssymb}
+
+\newcommand{\bra}[1]{\!\left\langle#1\right|\!}
+\newcommand{\ket}[1]{\!\left|#1\right\rangle\!}
+\newcommand{\braket}[2]{\left\langle #1 \middle| #2 \right\rangle}
+\newcommand{\ketbra}[2]{\ket{#1}\bra{#2}}        % outer product
+\newcommand{\density}[1]{\ketbra{#1}{#1}}     % density matrix of a pure state
+\newcommand{\prom}[1]{\langle{#1}\rangle}
+\newcommand{\matrixel}[3]{\bra{#1}{#2}\ket{#3}}
+
+\newcommand{\sen}[0]{\mathrm{sen}}
+\newcommand{\im}[0]{\mathrm{i}}
+\newcommand{\Tr}[0]{\mathrm{Tr}\hspace{1pt}}
+\newcommand{\e}[1]{\mathrm{e}^{#1}}
+
+\endinput
+

@@ -1,0 +1,71 @@
+% Chapter 2
+
+\chapter{Title of Chapter 2} % Main chapter title
+
+\label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+% ----------------------------------------------------------------------------------------
+
+% ----------------------------------------------------------------------------------------
+
+
+Fusce ligula purus, interdum sed pharetra eu, tincidunt quis dui. Duis auctor, sem vel efficitur eleifend, erat nunc pharetra quam, eget venenatis sapien dui vel velit. Aenean varius sed sapien quis rutrum. Ut quis semper diam, vitae tristique est. Sed ullamcorper mollis turpis id facilisis. Morbi convallis nibh dolor, ut semper est hendrerit ut. Ut ultricies iaculis erat. Phasellus facilisis ex et augue rhoncus, non aliquam dolor cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ac sem elit. Nam varius ac elit ut accumsan. Cras purus erat, elementum id magna eu, lobortis pellentesque sapien. Pellentesque finibus arcu et vestibulum posuere. Quisque metus dui, porta a sagittis vel, euismod a nisl.
+\newline
+
+Showing equation 1:
+\begin{equation}
+  \label{eq1}
+  \mathcal{L}(t_1, t_2, ..., t_{16}) = 
+  \frac{1}{N_{norm}} \prod_{\nu = 1}^{16} \exp \left( -\frac{(\mathcal{N} \matrixel{\psi_{\nu}}{\hat\rho_p(t_1, t_2, ..., t_{16}}{\psi_{\nu}} - n_{\nu})^2}{2\mathcal{N}\matrixel{\psi_{\nu}}{\hat\rho_p(t_1, t_2, ..., t_{16}}{\psi_{\nu}}} \right)
+\end{equation}
+
+Showing equation 2:
+\begin{equation}
+  \label{eq:eq2}
+  i\hbar\frac{\partial \Psi(\textbf{r},t)}{\partial t} = \left[ -\frac{\hbar^2}{2m}\nabla^2 + V(\textbf{r})\right]\Psi(\textbf{r},t)
+\end{equation}
+
+Showing equation 3:
+\begin{equation}
+  \label{eq:GaussianBeam}
+  {\mathbf E(r,z)} = E_0 \, \hat{x} \, \frac{w_0}{w(z)} \exp  \left[ \frac{-r^2}{w(z)^2}\right]  \exp  \left[ -i  \! \left(kz +k \frac{r^2}{2R(z)} - \psi(z) \! \right)  \right] 
+\end{equation}
+
+Showing equations with Dirac notation:
+\begin{equation}
+  \label{eq:Dirac0-ket}
+  {\displaystyle \hat{H} \ket {\psi (t)} = i\hbar \frac {\partial }{\partial t} \ket {\psi (t)}}
+\end{equation}
+
+\begin{equation}
+  \label{eq:Dirac0-bra}
+  {\displaystyle \bra {\psi (t)}\hat{H} = -i\hbar \frac {\partial }{\partial t} \bra {\psi (t)}}
+\end{equation}
+
+\begin{equation}
+  \label{eq:Wigner}
+  W(x,p)\stackrel{\mathrm{def}}{=}\frac{1}{\pi\hbar}\int_{-\infty}^\infty \psi^*(x+y)\psi(x-y)e^{2ipy/\hbar}\,dy
+\end{equation}
+
+\begin{equation}
+  |\Psi(t)\rangle=\sum_{n}c_{n}(0)e^{-iE_{n}t/\hbar}|\psi_n\rangle,
+\end{equation}
+
+\begin{align}
+  \ket {\psi_{proj}^{(2)}(h_1, q_1, h_2, q_2)} &= \ket {\psi_{proj}^{(1)}(h_1, q_1)} \otimes 
+                                                 \ket {\psi_{proj}^{(1)}(h_2, q_2)} \nonumber \\
+                                               &= a(h_1,q_1)a(h_2,q_2)\ket{HH} + a(h_1,q_1)b(h_2,q_2)\ket{HV} \nonumber \\
+                                               &+ b(h_1,q_1)a(h_2,q_2)\ket{VH} + b(h_1,q_1)b(h_2,q_2)\ket{VV}
+\end{align}
+
+\begin{equation}
+  \label{eq:Dirac1}
+  \hat{\mu}_0=\ketbra{H}{H}+\ketbra{V}{V}
+\end{equation}
+
+\begin{equation}
+  \label{eq:Dirac2}
+  \matrixel{\psi_\nu}{M_\nu}{\psi_\nu} = \sum_\lambda (B^{-1})_{\lambda \nu} \underbrace{\matrixel{\psi_\nu}{\hat\Gamma_\mu}{\psi_\nu}}_\text{\normalsize{$B_{\mu, \lambda}$}} = 
+  \sum_\lambda \underbrace{B_{\mu, \lambda} (B^{-1})_{\lambda, \nu}}_\text{\normalsize{$\delta_{\mu, \nu}$}}
+\end{equation}
+
